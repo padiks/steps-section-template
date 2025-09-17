@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Steps Section Template</title>
+<script>
+  const svg = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="10" y="10" width="30" height="30" fill="#1e90ff"/>
+  <rect x="60" y="10" width="30" height="30" fill="#ff6347"/>
+  <circle cx="50" cy="70" r="20" fill="#32cd32"/>
+</svg>`;
+  const svgBlob = new Blob([svg], {type: 'image/svg+xml'});
+  const url = URL.createObjectURL(svgBlob);
+  const link = document.createElement('link');
+  link.rel = 'icon';
+  link.href = url;
+  document.head.appendChild(link);
+</script>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fdfdfd;
+  color: #2b2b2b;
+  overflow-x: hidden;
+}
+#steps-1893 {
+  padding: 4rem 1rem;
+  background: #fffaf6;
+  position: relative;
+}
+.cs-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr minmax(400px, 500px);
+  gap: 3rem;
+  align-items: start;
+}
+.cs-image-group {
+  position: relative;
+  order: 2;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* reduced for footer proximity */
+}
+.cs-picture img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-width: 500px;
+  min-width: 280px;
+}
+.cs-graphic {
+  position: absolute;
+  pointer-events: none;
+  max-width: 100%;
+}
+.cs-brown { top: 30%; left: -20px; }
+.cs-peach { bottom: 20%; right: -15px; }
+.cs-leaf { bottom: -30px; left: -40px; }
+.cs-dots { top: -40px; right: -40px; }
+.cs-lines { bottom: -40px; right: 20%; }
+.cs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  order: 1;
+}
+.cs-content { text-align: left; }
+.cs-topper {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #d97355;
+}
+.cs-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0.5rem 0 0;
+  color: #2b2b2b;
+}
+.cs-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.cs-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+.cs-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d97355;
+  flex-shrink: 0;
+}
+.cs-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.cs-h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #2b2b2b;
+}
+#steps-1893 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+  padding: 0 10px;
+  color: #555;
+}
+.first-word {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.site-footer {
+  background: #fffaf6;
+  color: #555;
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 0.85rem;
+}
+.site-footer a {
+  color: #555;
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  .cs-container { grid-template-columns: 1fr; text-align: center; }
+  .cs-wrapper { order: 2; align-items: center; }
+  .cs-image-group { order: 1; margin-bottom: 2rem; }
+  .cs-item { text-align: left; }
+  #steps-1893 p { padding: 0 10px; }
+  .cs-brown { top: 10%; }
+}
+</style>
+</head>
+<body>
+<section id="steps-1893">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset="images/pexels-eugenia-remark-5767088-33696811.jpg" />
+        <source media="(min-width: 601px)" srcset="images/pexels-eugenia-remark-5767088-33696811.jpg" />
+        <img loading="lazy" decoding="async" src="images/pexels-eugenia-remark-5767088-33696811.jpg" alt="My Local Image" width="324" height="467" />
+      </picture>
+      <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="images/brown-lines2.svg" alt="graphic" width="100" height="98" aria-hidden="true" />
+      <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="images/peach-blob.svg" alt="graphic" width="42" height="31" aria-hidden="true" />
+      <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="images/leaf-reverse.svg" alt="graphic" width="136" height="171" aria-hidden="true" />
+      <img class="cs-graphic cs-dots" loading="lazy" decoding="async" src="images/beige-dots.svg" alt="graphic" width="159" height="88" aria-hidden="true" />
+      <img class="cs-graphic cs-lines" loading="lazy" decoding="async" src="images/mesh-reverse.svg" alt="graphic" width="150" height="165" aria-hidden="true" />
+    </div>
+    <div class="cs-wrapper">
+      <div class="cs-content">
+        <span class="cs-topper">Author</span>
+        <h2 class="cs-title">Title of the article</h2>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <span class="cs-number">03</span>
+          <div class="cs-flex">
+            <h3 class="cs-h3">Title of the chapter</h3>
+            <p><span class="first-word">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  &copy; 2025 The Nexus Gazette. Template downloaded from 
+  <a href="https://codestitch.app/app" target="_blank" rel="noopener noreferrer">CodeStitch</a> and modified for our use. Images sourced from 
+  <a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer">Pexels</a>.
+</footer>
+</body>
+</html>
+<!--
+  This project uses HTML templates from CodeStitch (https://codestitch.app).
+  CodeStitch grants a broad commercial license for personal and client projects.
+  Redistribution or sublicensing of their templates is prohibited without permission.
+  For full terms, visit https://codestitch.app/terms-of-service.
+-->
