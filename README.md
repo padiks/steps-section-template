@@ -74,7 +74,7 @@ Please refer to **CodeStitch Terms of Service** for full licensing details: [htt
 ---
 
 ## Contributing
-Contributions are welcome! Please submit a pull request or open an issue.  
+This template is provided as a finished resource. No additional contributions are expected at this time.
 
 ---
 
